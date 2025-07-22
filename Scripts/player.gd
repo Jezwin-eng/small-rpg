@@ -18,6 +18,7 @@ func _physics_process(delta):
 	get_attacked()
 	attack_animation()
 	current_cam()
+	update_health()
 	if health <= 0:
 		player_alive = false
 		health = 0
@@ -101,7 +102,7 @@ func _on_player_hitbox_body_exited(body: Node2D) -> void:
 
 func get_attacked():
 	if in_attack_range == true and attack_cooldown == true:
-		health = health - 20
+		health = health - 5
 		attack_cooldown = false
 		$attack_cooldown.start()
 		print(health)
@@ -147,3 +148,24 @@ func current_cam():
 	elif global.current_scene == "cliff_side":
 		$world_cam.enabled = false
 		$cliff_side_cam.enabled = true
+
+
+func update_health():
+	var healthbar =$health_bar
+	healthbar.value = health
+	if health>= 100:
+		healthbar.visible = false
+		
+	else:
+		healthbar.visible = true
+	if health < 50:
+		healthbar.modulate = Color("ff3225")
+	else:
+		healthbar.modulate = Color("75f625")
+func _on_regen_clock_timeout() -> void:
+	if health < 100:
+		health = health + 20
+		if health >= 100:
+			health = 100
+	if health == 0:
+		health = 0
