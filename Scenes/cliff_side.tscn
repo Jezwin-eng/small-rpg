@@ -177,29 +177,31 @@ sources/1 = SubResource("TileSetAtlasSource_kn5uo")
 texture = ExtResource("4_kn5uo")
 6:7/size_in_atlas = Vector2i(2, 2)
 6:7/0 = 0
-6:7/0/y_sort_origin = 10
+6:7/0/y_sort_origin = -5
 6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.135, 7.64714, -13.8604, 2.23042, 14.0198, 2.23042, 11.4707, 10.5148, 8.60303, 13.3825, -5.57604, 13.7011, -12.5859, 12.7452)
 8:6/size_in_atlas = Vector2i(2, 3)
 8:6/0 = 0
-8:6/0/y_sort_origin = 16
 8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, 8, 8, 4.93878, 16.8874, 5.57604, 20.711, -3.98288, 21.0296, -4.93877, 16.5688)
 10:7/size_in_atlas = Vector2i(2, 2)
 10:7/0 = 0
-10:7/0/y_sort_origin = 5
+10:7/0/y_sort_origin = -5
 10:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.0711, -8, 8, -5.09809, 12.5859, 5.09809, 10.3555, 9.87756, 3.79041, 9.36455, 1.44832, 5.79329, 0.371609, 10.1078, -7.05269, 9.54102, -8, 6.39167, -11.5199, 5.64846, -10.9129, 0.887143, -11.8172, -1.48644, -8, -5.05388, -3.93905, -8)
 11:2/size_in_atlas = Vector2i(1, 2)
 11:2/0 = 0
+11:2/0/y_sort_origin = -5
 11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:0/size_in_atlas = Vector2i(2, 1)
 10:0/0 = 0
+10:0/0/y_sort_origin = -5
 10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(15.236, 3.56745, 14.1955, 7.13489, 11.2226, 7.43218, 10.4794, 4.75659, -10.4794, 4.45931, -10.3307, 7.28354, -14.79, 7.43218, -15.3846, 4.16202, -15.6819, -7.58082, 14.9387, -7.13489)
 5:0/0 = 0
-5:0/0/y_sort_origin = 4
+5:0/0/y_sort_origin = -5
 5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(6.61464, 5.94574, -6.16871, 5.64846, -6.61464, -1.18915, 6.466, -1.04051)
 0:0/0 = 0
+0:0/0/y_sort_origin = -5
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(6.466, 2.3783, 1.56076, 2.52694, 2.00669, 5.20252, -1.41211, 5.49981, -1.11483, 3.12152, -5.87142, 2.3783, -6.61464, -0.297288, -1.26347, 0.148643, 6.31735, 0.148643)
 0:1/0 = 0
-0:1/0/y_sort_origin = 4
+0:1/0/y_sort_origin = -5
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(6.61464, 5.94574, 0.668898, 8, -6.16871, 5.64846, -6.61464, -1.18915, -3.49312, -3.12152, 0.668898, -2.67558, 4.83092, -4.16202, 6.466, -1.04051)
 0:5/size_in_atlas = Vector2i(3, 4)
 0:5/0 = 0
@@ -226,7 +228,7 @@ tile_set = SubResource("TileSet_3yh5b")
 
 [node name="objects" type="TileMapLayer" parent="."]
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAAJAAYAAAAKAAAAAAAMAAYAAAAKAAAAAAAPAAYAAAAKAAAAAAADAAQAAAALAAIAAAAUAAMAAAAFAAAAAAAVAAQAAAAFAAAAAAAUAAQAAAAFAAAAAAAVAAMAAAAFAAAAAAAIAAgAAAAAAAAAAAATAAcAAAAAAAUAAAA=")
+tile_map_data = PackedByteArray("AAAJAAYAAAAKAAAAAAAMAAYAAAAKAAAAAAAPAAYAAAAKAAAAAAADAAQAAAALAAIAAAAUAAMAAAAFAAAAAAAVAAQAAAAFAAAAAAAUAAQAAAAFAAAAAAAVAAMAAAAFAAAAAAAIAAgAAAAAAAAAAAATAAcAAAAAAAUAAAAQAAkAAAAIAAYAAAAHAAkAAAAIAAYAAAAQAA8AAAAGAAcAAAAHAA8AAAAGAAcAAAAMAAsAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_5q0lq")
 
 [node name="Player" parent="." instance=ExtResource("5_3yh5b")]

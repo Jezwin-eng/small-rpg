@@ -1,6 +1,12 @@
 extends Node2D
 func _ready() -> void:
-	pass
+	if global.first_game_start== true:
+		$Player.position.x = global.player_start_posx
+		$Player.position.y = global.player_start_posy
+		
+	else :
+		$Player.position.x = global.player_exit_cliffside_posx
+		$Player.position.y = global.player_exit_cliffside_posy
 
 func _process(delta: float) -> void:
 	pass
@@ -19,3 +25,4 @@ func change_scene():
 	if global.current_scene == "world":
 		get_tree().change_scene_to_file("res://Scenes/cliff_side.tscn")
 		global.set_scene("cliff_side")
+		global.first_game_start = false
