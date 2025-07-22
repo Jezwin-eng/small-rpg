@@ -15,7 +15,7 @@ func _ready():
 	add_to_group("enemies")  
 	$AnimatedSprite2D.play("jump")
 func _physics_process(_delta: float) -> void:
-	
+	update_health()
 	if player_chase and not touching:
 		$AnimatedSprite2D.play("run")
 		var dir = to_local(nav_agent.get_next_path_position()).normalized()
@@ -70,3 +70,18 @@ func damage_received():
 
 func _on_damage_taken_timeout() -> void:
 	can_take_dmg = true
+	
+func update_health():
+	var healthbar = $health_bar
+	healthbar.value = health
+	if health >= 100:
+		healthbar.visible = false
+	else:
+		healthbar.visible = true
+		
+	if health < 50:
+		healthbar.modulate = Color("ff3225")
+	else:
+		healthbar.modulate = Color("75f625")
+		
+		
