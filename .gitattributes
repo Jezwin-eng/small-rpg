@@ -1,2 +1,20 @@
-# Normalize EOL for all files that Git considers text files.
-* text=auto eol=lf
+# Godot project file
+project.godot text
+
+# Mark all text-based files for proper line ending handling
+*.gd text
+*.tres text
+*.tscn text
+*.import text
+*.cfg text
+
+# Mark binary files to be treated as binary blobs
+*.png binary
+*.jpg binary
+*.webp binary
+*.svg binary
+*.ogg binary
+*.wav binary
+*.mp3 binary
+*.glb binary
+*.gltf binary

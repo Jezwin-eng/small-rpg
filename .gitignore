@@ -1,3 +1,20 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+# Godot-specific ignores
+export_presets.cfg
+*.translation
+
+# Exported builds
+builds/
+*.pck
+*.zip
+*.exe
+*.dmg
+*.apk
+*.aab
+
+# Mono-specific ignores for C#
+.mono/
+bin/
+obj/
