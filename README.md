@@ -68,9 +68,3 @@ To get a local copy up and running, follow these simple steps.
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 ---
 
-## 🙏 Acknowledgements & Credits
-
-* **Game Design & Programming:** [Your Name / Jezwin-eng]
-* **Art Assets:** [Credit the artist or yourself]
-* **Sound & Music:** [Credit the musician or yourself]
-* **Inspiration:** [Any games, tutorials, or people who inspired you]
